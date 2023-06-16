@@ -26,3 +26,8 @@ console.log(list);
     list.classList.toggle("temp")
     list.classList.contains("temp")
     console.log(list.classList)
+
+// set/remove/check attributes
+    list.setAttribute("class", "temp")
+    list.removeAttribute("class")
+    console.log(list.hasAttribute("class"))
