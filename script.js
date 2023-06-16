@@ -45,14 +45,27 @@
 
 
 
-const list = document.querySelector("#list")
-console.log(list)
+// const list = document.querySelector("#list")
+// console.log(list)
 
-// Create element
-    const span = document.createElement("span")
-// Create text node
-    const text = document.createTextNode("This is dynamic message!")
-    // Or span.textContent = "This is dynamic message!"
-// Append text to span element
-    span.append(text) // Or span.appendChild(text)
-    console.log(span)
+// // Create element
+//     const span = document.createElement("span")
+// // Create text node
+//     const text = document.createTextNode("This is dynamic message!")
+//     // Or span.textContent = "This is dynamic message!"
+// // Append text to span element
+//     span.append(text) // Or span.appendChild(text)
+//     console.log(span)
+
+
+// Create div element
+    const div = document.createElement("div")
+// Change or set InnerHtml of div tag
+    div.innerHTML = "<span>Title</span>"
+// See full div element
+    console.log(div)
+// See innerText
+    console.log(div.children[0].innerText)
+// Change innerText
+    div.firstChild.innerText = "Changed title!"
+    console.log(div)
