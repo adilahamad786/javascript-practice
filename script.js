@@ -82,18 +82,22 @@
 
 
 // Both are working same
-// const Items1 = document.getElementsByClassName("list-item");
-// console.log(Items1[0].nextElementSibling)
+const Items1 = document.getElementsByClassName("list-item");
+console.log(Items1[0].nextElementSibling)
+// Working with style and children elements
+    for (let item of Items1) {
+        item.firstElementChild.style.color = "green"
+    }
 
-// const Items2 = document.querySelectorAll(".list-item");
-// console.log(Items2[0].nextElementSibling)
+const Items2 = document.querySelectorAll(".list-item");
+console.log(Items2[0].nextElementSibling)
+// Working with style and children elements
+    for (let item of Items2) {
+        item.firstElementChild.style.color = "green"
+    }
 
 
-// // Working with style and children elements
-//     const items = document.querySelectorAll(".list-item")
-//     for (let item of items) {
-//         item.firstElementChild.style.color = "green"
-//     }
+
 
 
 // // Select list
@@ -171,12 +175,12 @@
 
 
 
-// Basic string element creation steps
-    const list = document.getElementById("list")
-    const html = `<li class="list-item"><a href="">New Added!</a></li>`
+// // Basic string element creation steps
+//     const list = document.getElementById("list")
+//     const html = `<li class="list-item"><a href="">New Added!</a></li>`
 
-// Insert html string element at various place using insertAdjacentElement
-    list.insertAdjacentHTML("beforebegin", html)
-    list.insertAdjacentHTML("afterbegin", html)
-    list.insertAdjacentHTML("beforeend", html)
-    list.insertAdjacentHTML("afterend", html)
+// // Insert html string element at various place using insertAdjacentElement
+//     list.insertAdjacentHTML("beforebegin", html)
+//     list.insertAdjacentHTML("afterbegin", html)
+//     list.insertAdjacentHTML("beforeend", html)
+//     list.insertAdjacentHTML("afterend", html)
