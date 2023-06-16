@@ -1,0 +1,1 @@
+console.log("Srcipt is running.");
