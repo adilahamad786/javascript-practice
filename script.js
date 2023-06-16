@@ -89,8 +89,25 @@
 // console.log(Items2[0].nextElementSibling)
 
 
-// Working with style and children elements
-const items = document.querySelectorAll(".list-item")
-for (let item of items) {
-    item.firstElementChild.style.color = "green"
-}
+// // Working with style and children elements
+//     const items = document.querySelectorAll(".list-item")
+//     for (let item of items) {
+//         item.firstElementChild.style.color = "green"
+//     }
+
+
+// Select list
+const list = document.querySelector("#list")
+// Creating li element
+    const li = document.createElement("li")
+// Adding class in li element
+    li.classList.add("list-item")
+// Create dynamic html
+    let text = "Title"
+    const html = `<a href="">${text}</a>`
+// Insert html
+    li.innerHTML = html
+// append li in list
+    list.append(li);
+// Clone and append again
+    list.append(li.cloneNode(true));
