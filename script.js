@@ -58,14 +58,23 @@
 //     console.log(span)
 
 
-// Create div element
-    const div = document.createElement("div")
-// Change or set InnerHtml of div tag
-    div.innerHTML = "<span>Title</span>"
-// See full div element
-    console.log(div)
-// See innerText
-    console.log(div.children[0].innerText)
-// Change innerText
-    div.firstChild.innerText = "Changed title!"
-    console.log(div)
+// // Create div element
+//     const div = document.createElement("div")
+// // Change or set InnerHtml of div tag
+//     div.innerHTML = "<span>Title</span>"
+// // See full div element
+//     console.log(div)
+// // See innerText
+//     console.log(div.children[0].innerText)
+// // Change innerText
+//     div.firstChild.innerText = "Changed title!"
+//     console.log(div)
+
+
+const list1 = document.querySelector("#list");
+console.log(list1.parentElement)
+console.log(list1.children[0])
+
+const list2 = document.getElementById("list");
+console.log(list2.parentElement)
+console.log(list2.children[0])
