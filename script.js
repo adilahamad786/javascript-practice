@@ -113,6 +113,27 @@
 //     list.append(li.cloneNode(true));
 
 
+// // Basic element creation steps
+// const list = document.getElementById("list")
+// const li = document.createElement("li")
+// li.classList.add("list-item")
+// const html = `<a href="">New Added!</a>`
+// li.innerHTML = html
+
+// // methods to add HTML element as various place
+// // Insert as last child element
+//     list.append(li)
+//     list.appendChild(li)
+// // Insert as first child element
+//     list.prepend(li)
+// // Insert element before the selected element
+//     list.before(li)
+// // Insert element after the selected element
+//     list.after(li)
+
+
+
+
 // Basic element creation steps
 const list = document.getElementById("list")
 const li = document.createElement("li")
@@ -120,13 +141,8 @@ li.classList.add("list-item")
 const html = `<a href="">New Added!</a>`
 li.innerHTML = html
 
-// methods to add HTML element as various place
-// Insert as last child element
-    list.append(li)
-    list.appendChild(li)
-// Insert as first child element
-    list.prepend(li)
-// Insert element before the selected element
-    list.before(li)
-// Insert element after the selected element
-    list.after(li)
+// Insert html element at various place using insertAdjacentElement
+list.insertAdjacentElement("beforebegin", li)
+list.insertAdjacentElement("afterbegin", li)
+list.insertAdjacentElement("beforeend", li)
+list.insertAdjacentElement("afterend", li)
