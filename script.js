@@ -96,18 +96,37 @@
 //     }
 
 
-// Select list
-const list = document.querySelector("#list")
-// Creating li element
-    const li = document.createElement("li")
-// Adding class in li element
-    li.classList.add("list-item")
-// Create dynamic html
-    let text = "Title"
-    const html = `<a href="">${text}</a>`
-// Insert html
-    li.innerHTML = html
-// append li in list
-    list.append(li);
-// Clone and append again
-    list.append(li.cloneNode(true));
+// // Select list
+// const list = document.querySelector("#list")
+// // Creating li element
+//     const li = document.createElement("li")
+// // Adding class in li element
+//     li.classList.add("list-item")
+// // Create dynamic html
+//     let text = "Title"
+//     const html = `<a href="">${text}</a>`
+// // Insert html
+//     li.innerHTML = html
+// // append li in list
+//     list.append(li);
+// // Clone and append again
+//     list.append(li.cloneNode(true));
+
+
+// Basic element creation steps
+const list = document.getElementById("list")
+const li = document.createElement("li")
+li.classList.add("list-item")
+const html = `<a href="">New Added!</a>`
+li.innerHTML = html
+
+// methods to add HTML element as various place
+// Insert as last child element
+    list.append(li)
+    list.appendChild(li)
+// Insert as first child element
+    list.prepend(li)
+// Insert element before the selected element
+    list.before(li)
+// Insert element after the selected element
+    list.after(li)
