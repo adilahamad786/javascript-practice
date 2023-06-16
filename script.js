@@ -233,3 +233,11 @@ const browserWidth = window.outerWidth
 console.log(browserWidth)
 const browserHeight = window.outerHeight
 console.log(browserHeight)
+
+
+
+// Getting window width and heigth
+const windowWidth = window.innerWidth
+console.log(windowWidth)
+const windowHeight = window.innerHeight
+console.log(windowHeight)
