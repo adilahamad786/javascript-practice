@@ -16,3 +16,6 @@ console.log(list);
     }
     console.log(list.firstElementChild)
     console.log(list.lastElementChild)
+
+// Adding style
+list.style.border = "3px solid orange"
