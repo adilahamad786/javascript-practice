@@ -18,4 +18,11 @@ console.log(list);
     console.log(list.lastElementChild)
 
 // Adding style
-list.style.border = "3px solid orange"
+    list.style.border = "3px solid orange"
+
+// add/remove/toggle/exist/see-all-classes class
+    list.classList.add("temp")
+    list.classList.remove("temp")
+    list.classList.toggle("temp")
+    list.classList.contains("temp")
+    console.log(list.classList)
