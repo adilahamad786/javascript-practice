@@ -81,21 +81,20 @@
 // console.log(list2.children[0])
 
 
-// Both are working same
-const Items1 = document.getElementsByClassName("list-item");
-console.log(Items1[0].nextElementSibling)
-// Working with style and children elements
-    for (let item of Items1) {
-        item.firstElementChild.style.color = "green"
-    }
+// // Both are working same
+// const Items1 = document.getElementsByClassName("list-item");
+// console.log(Items1[0].nextElementSibling)
+// // Working with style and children elements
+//     for (let item of Items1) {
+//         item.firstElementChild.style.color = "green"
+//     }
 
-const Items2 = document.querySelectorAll(".list-item");
-console.log(Items2[0].nextElementSibling)
-// Working with style and children elements
-    for (let item of Items2) {
-        item.firstElementChild.style.color = "green"
-    }
-
+// const Items2 = document.querySelectorAll(".list-item");
+// console.log(Items2[0].nextElementSibling)
+// // Working with style and children elements
+//     for (let item of Items2) {
+//         item.firstElementChild.style.color = "green"
+//     }
 
 
 
@@ -184,3 +183,44 @@ console.log(Items2[0].nextElementSibling)
 //     list.insertAdjacentHTML("afterbegin", html)
 //     list.insertAdjacentHTML("beforeend", html)
 //     list.insertAdjacentHTML("afterend", html)
+
+
+
+// NodeList represent static list of element and working forEach method also
+    const list = document.querySelector("#list");
+    console.log(list)
+    const items = document.querySelectorAll(".list-item");
+    console.log(items) // output: NodeList(5)
+
+    items.forEach(val=>console.log(val)) // working forEach method
+    for (let item of items)
+        console.log(item)
+
+    const li = document.createElement("li")
+    li.classList.add("list-item")
+    li.innerHTML = `<a href="#">New Added!</a>`
+
+    list.appendChild(li);
+    console.log(items) // output: NodeList(5)
+
+
+
+// HTMLCollection represent dynamic list of element and for of loop working, but forEach method not working directly
+    const list = document.getElementById("list");
+    console.log(list)
+    const items = document.getElementsByClassName("list-item");
+    console.log(items) // output: HTMLCollection(5)
+
+    for (let item of items) // for of loop working
+        console.log(item)
+
+    Array.from(items).forEach(val => { // direct forEach not working
+        console.log(val)
+    });
+
+    const li = document.createElement("li")
+    li.classList.add("list-item")
+    li.innerHTML = `<a href="#">New Added!</a>`
+
+    list.appendChild(li);
+    console.log(items) // output: HTMLCollection(6)
