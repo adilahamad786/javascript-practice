@@ -8,3 +8,52 @@ body {
     background-color: lightblue;
     padding: 1rem;
 }
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+.info {
+    background-color: aqua;
+    padding: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-width: 15rem;
+    gap: 0.5rem;
+    background-color: aqua;
+    padding: 1rem;
+}
+
+.list-item {
+    padding: 1rem 2rem;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 8rem;
+    height: 8rem;
+}
