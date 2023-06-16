@@ -87,3 +87,10 @@
 
 // const Items2 = document.querySelectorAll(".list-item");
 // console.log(Items2[0].nextElementSibling)
+
+
+// Working with style and children elements
+const items = document.querySelectorAll(".list-item")
+for (let item of items) {
+    item.firstElementChild.style.color = "green"
+}
