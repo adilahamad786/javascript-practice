@@ -153,18 +153,30 @@
 
 
 
-// Basic element creation steps
-    const list = document.getElementById("list")
-    const li = document.createElement("li")
-    li.classList.add("list-item")
-    const html = `<a href="">New Added!</a>`
-    li.innerHTML = html
+// // Basic element creation steps
+//     const list = document.getElementById("list")
+//     const li = document.createElement("li")
+//     li.classList.add("list-item")
+//     const html = `<a href="">New Added!</a>`
+//     li.innerHTML = html
 
-// Insert element as last child
-    list.appendChild(li)
-// Replace element by reference(child) element
-    list.replaceChild(li, list.firstElementChild)
-// Insert element, before the given reference(child) element
-    list.insertBefore(li, list.lastElementChild)
-// Remove given reference(child) element
-    list.removeChild(list.lastElementChild)
+// // Insert element as last child
+//     list.appendChild(li)
+// // Replace element by reference(child) element
+//     list.replaceChild(li, list.firstElementChild)
+// // Insert element, before the given reference(child) element
+//     list.insertBefore(li, list.lastElementChild)
+// // Remove given reference(child) element
+//     list.removeChild(list.lastElementChild)
+
+
+
+// Basic string element creation steps
+    const list = document.getElementById("list")
+    const html = `<li class="list-item"><a href="">New Added!</a></li>`
+
+// Insert html string element at various place using insertAdjacentElement
+    list.insertAdjacentHTML("beforebegin", html)
+    list.insertAdjacentHTML("afterbegin", html)
+    list.insertAdjacentHTML("beforeend", html)
+    list.insertAdjacentHTML("afterend", html)
