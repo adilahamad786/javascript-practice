@@ -34,11 +34,25 @@
 //     console.log(list.hasAttribute("class"))
 
 
-// Working with NodeList
-    const lis = document.querySelectorAll(".list-item")
-    console.log(lis)
+// // Working with NodeList
+//     const lis = document.querySelectorAll(".list-item")
+//     console.log(lis)
 
-// NodeList also iterable
-    for (li of lis) {
-        console.log(li)
-    }
+// // NodeList also iterable
+//     for (li of lis) {
+//         console.log(li)
+//     }
+
+
+
+const list = document.querySelector("#list")
+console.log(list)
+
+// Create element
+    const span = document.createElement("span")
+// Create text node
+    const text = document.createTextNode("This is dynamic message!")
+    // Or span.textContent = "This is dynamic message!"
+// Append text to span element
+    span.append(text) // Or span.appendChild(text)
+    console.log(span)
