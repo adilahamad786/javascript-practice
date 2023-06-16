@@ -130,19 +130,41 @@
 //     list.before(li)
 // // Insert element after the selected element
 //     list.after(li)
+// // Remove element
+//     list.firstElementChild.remove()
+
+
+
+
+// // Basic element creation steps
+// const list = document.getElementById("list")
+// const li = document.createElement("li")
+// li.classList.add("list-item")
+// const html = `<a href="">New Added!</a>`
+// li.innerHTML = html
+
+// // Insert html element at various place using insertAdjacentElement
+// list.insertAdjacentElement("beforebegin", li)
+// list.insertAdjacentElement("afterbegin", li)
+// list.insertAdjacentElement("beforeend", li)
+// list.insertAdjacentElement("afterend", li)
+
 
 
 
 
 // Basic element creation steps
-const list = document.getElementById("list")
-const li = document.createElement("li")
-li.classList.add("list-item")
-const html = `<a href="">New Added!</a>`
-li.innerHTML = html
+    const list = document.getElementById("list")
+    const li = document.createElement("li")
+    li.classList.add("list-item")
+    const html = `<a href="">New Added!</a>`
+    li.innerHTML = html
 
-// Insert html element at various place using insertAdjacentElement
-list.insertAdjacentElement("beforebegin", li)
-list.insertAdjacentElement("afterbegin", li)
-list.insertAdjacentElement("beforeend", li)
-list.insertAdjacentElement("afterend", li)
+// Insert element as last child
+    list.appendChild(li)
+// Replace element by reference(child) element
+    list.replaceChild(li, list.firstElementChild)
+// Insert element, before the given reference(child) element
+    list.insertBefore(li, list.lastElementChild)
+// Remove given reference(child) element
+    list.removeChild(list.lastElementChild)
