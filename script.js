@@ -71,10 +71,19 @@
 //     console.log(div)
 
 
-const list1 = document.querySelector("#list");
-console.log(list1.parentElement)
-console.log(list1.children[0])
+// Both are working same
+// const list1 = document.querySelector("#list");
+// console.log(list1.parentElement)
+// console.log(list1.children[0])
 
-const list2 = document.getElementById("list");
-console.log(list2.parentElement)
-console.log(list2.children[0])
+// const list2 = document.getElementById("list");
+// console.log(list2.parentElement)
+// console.log(list2.children[0])
+
+
+// Both are working same
+// const Items1 = document.getElementsByClassName("list-item");
+// console.log(Items1[0].nextElementSibling)
+
+// const Items2 = document.querySelectorAll(".list-item");
+// console.log(Items2[0].nextElementSibling)
