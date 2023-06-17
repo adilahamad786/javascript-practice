@@ -267,27 +267,49 @@
 
 
 
-// WORKING with Events
-    const input = document.querySelector("#username")
-    console.log(input)
+// // WORKING with Events
+//     const input = document.querySelector("#username")
+//     console.log(input)
 
-    const task1 = (e) => {
-        e.preventDefault();
-        console.log(e.target.value)
-        console.log("task 1")
-    }
+//     const task1 = (e) => {
+//         e.preventDefault();
+//         console.log(e.target.value)
+//         console.log("task 1")
+//     }
 
-    const task2 = (e) => {
-        e.preventDefault();
-        console.log(e.target.value)
-        console.log("task 2")
-    }
+//     const task2 = (e) => {
+//         e.preventDefault();
+//         console.log(e.target.value)
+//         console.log("task 2")
+//     }
 
-// Working...
-    input.addEventListener("change", task1)
+// // Working...
+//     input.addEventListener("change", task1)
 
-// Working...
-    input.addEventListener("change", task2)
+// // Working...
+//     input.addEventListener("change", task2)
 
-// Remove addEventListener
-    input.removeEventListener("change", task1)
+// // Remove addEventListener
+//     input.removeEventListener("change", task1)
+
+
+const grandparent = document.querySelector(".grandparent")
+
+const fun1 = (e) => {
+    e.preventDefault();
+    console.log("This when using arrow function")
+    console.log(this)
+    console.log(e.target);
+    console.log(e.currentTarget)
+}
+
+function fun2(e) {
+    e.preventDefault();
+    console.log("This when using traditional function")
+    console.log(this)
+    console.log(e.target);
+    console.log(e.currentTarget)
+}
+
+grandparent.addEventListener("click", fun1)
+grandparent.addEventListener("click", fun2)
