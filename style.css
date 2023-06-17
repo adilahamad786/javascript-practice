@@ -91,3 +91,24 @@ body {
     height: 10rem;
     background-color: orange;
 }
+
+
+.outer {
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp2555019.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s all ease-in-out;
+}
+
+.inner:hover {
+    transform: scale(1.5);
+}
