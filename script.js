@@ -241,3 +241,18 @@ const windowWidth = window.innerWidth
 console.log(windowWidth)
 const windowHeight = window.innerHeight
 console.log(windowHeight)
+
+
+
+// Getting Element Dimentions
+    const box = document.querySelector(".container")
+    console.log(box)
+    box.style.border = "2px solid red"
+    box.style.margin = "2rem"
+    box.style.padding = "2rem"
+    const dimentions = box.getBoundingClientRect()
+    console.log(dimentions)
+
+// Getting element width and height including both side border, padding and width and height
+    console.log(box.offsetWidth)
+    console.log(box.offsetHeight)
