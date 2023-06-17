@@ -265,11 +265,29 @@
 
 
 
-// WORKING with Events
-const input = document.querySelector("#username")
-console.log(input)
 
-input.addEventListener("change", (e) => {
-    e.preventDefault();
-    console.log(e.target.value)
-})
+
+// WORKING with Events
+    const input = document.querySelector("#username")
+    console.log(input)
+
+    const task1 = (e) => {
+        e.preventDefault();
+        console.log(e.target.value)
+        console.log("task 1")
+    }
+
+    const task2 = (e) => {
+        e.preventDefault();
+        console.log(e.target.value)
+        console.log("task 2")
+    }
+
+// Working...
+    input.addEventListener("change", task1)
+
+// Working...
+    input.addEventListener("change", task2)
+
+// Remove addEventListener
+    input.removeEventListener("change", task1)
