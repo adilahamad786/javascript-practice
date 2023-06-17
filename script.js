@@ -259,6 +259,17 @@
 
 
 
-// Calculate viewport height and width
-const viewportDimentions = window.visualViewport;
-console.log(viewportDimentions)
+// // Calculate viewport height and width
+//     const viewportDimentions = window.visualViewport;
+//     console.log(viewportDimentions)
+
+
+
+// WORKING with Events
+const input = document.querySelector("#username")
+console.log(input)
+
+input.addEventListener("change", (e) => {
+    e.preventDefault();
+    console.log(e.target.value)
+})
