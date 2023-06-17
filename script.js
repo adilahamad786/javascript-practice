@@ -228,31 +228,37 @@
 
 
 
-// Getting browser width and heigth
-const browserWidth = window.outerWidth
-console.log(browserWidth)
-const browserHeight = window.outerHeight
-console.log(browserHeight)
+// // Getting browser width and heigth
+//     const browserWidth = window.outerWidth
+//     console.log(browserWidth)
+//     const browserHeight = window.outerHeight
+//     console.log(browserHeight)
 
 
 
-// Getting window width and heigth
-const windowWidth = window.innerWidth
-console.log(windowWidth)
-const windowHeight = window.innerHeight
-console.log(windowHeight)
+// // Getting window width and heigth
+//     const windowWidth = window.innerWidth
+//     console.log(windowWidth)
+//     const windowHeight = window.innerHeight
+//     console.log(windowHeight)
 
 
 
-// Getting Element Dimentions
-    const box = document.querySelector(".container")
-    console.log(box)
-    box.style.border = "2px solid red"
-    box.style.margin = "2rem"
-    box.style.padding = "2rem"
-    const dimentions = box.getBoundingClientRect()
-    console.log(dimentions)
+// // Getting Element Dimentions
+//     const box = document.querySelector(".container")
+//     console.log(box)
+//     box.style.border = "2px solid red"
+//     box.style.margin = "2rem"
+//     box.style.padding = "2rem"
+//     const dimentions = box.getBoundingClientRect()
+//     console.log(dimentions)
 
-// Getting element width and height including both side border, padding and width and height
-    console.log(box.offsetWidth)
-    console.log(box.offsetHeight)
+// // Getting element width and height including both side border, padding and width and height
+//     console.log(box.offsetWidth)
+//     console.log(box.offsetHeight)
+
+
+
+// Calculate viewport height and width
+const viewportDimentions = window.visualViewport;
+console.log(viewportDimentions)
